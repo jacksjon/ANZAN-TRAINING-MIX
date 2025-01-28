@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>暗算トレーニング</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="question"><h1 id="question">式</h1></div>
+  <div class="answer-display"><h2 id="answer-display">判別</h2></div>
+  <div class="answer"><input type="text" placeholder="答えを入力" id="answer"></div>
+  
+  <div class="button">
+    <button id="answers" onclick="answerDisplay()">答え</button>
+    <button id="answer-after" onclick="answerCheck()">答え合わせ</button>
+    <button id="next" onclick="questionGenerate()">次の問題へ</button>
+  </div>
+  <div><h2 id="times"></h2></div>
+  <div><a onclick="Leload()">リセット</a></div>
+  <script src="main.js"></script>
+</body>
+</html>
